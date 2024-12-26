@@ -7,33 +7,34 @@
 }
 
 nav {
-    padding: 1rem;
+    padding: 1.5rem;
     position: relative;
     width: 100%;
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .logo img {
-    width: 100px;
+    width: 120px;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #4b5563;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
@@ -80,7 +81,7 @@ nav {
 
 .slide img {
     width: 100%;
-    height: 600px;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -96,8 +97,8 @@ nav {
 }
 
 .slider-dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.5);
     cursor: pointer;
@@ -115,7 +116,7 @@ nav {
     transform: translate(-50%, -50%);
     color: white;
     padding: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     opacity: 0;
     pointer-events: none;
@@ -133,26 +134,29 @@ nav {
 }
 
 .contact-section {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 6rem auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
     text-align: left;
 }
+
 .contact-section p {
     color: #6b7280;
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
+
 .contact-section a {
     color: #6b7280;
-
+    font-size: 1.2rem;
 }
 
 /* About Section */
 .about-section {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 6rem auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
     text-align: center;
 }
 
@@ -161,17 +165,17 @@ nav {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #4b5563;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-weight: lighter;
     text-align: left;
 }
 
 .about-section h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #4b5563;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     opacity: 0;
     transform: translateY(20px);
 }
@@ -185,8 +189,8 @@ h1 {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 4rem;
-    margin-top: 2rem;
+    gap: 6rem;
+    margin-top: 3rem;
 }
 
 .about-logo {
@@ -202,7 +206,7 @@ h1 {
 }
 
 .about-logo img {
-    width: 200px;
+    width: 250px;
 }
 
 .about-section.visible .about-logo img {
@@ -225,21 +229,22 @@ h1 {
 .about-text p {
     color: #6b7280;
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
 /* Content Section */
 .content-section {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 6rem auto;
+    padding: 0 3rem;
 }
 
 .content-block {
     display: flex;
     align-items: center;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 6rem;
+    margin-bottom: 6rem;
 }
 
 .content-block:nth-child(even) {
@@ -247,8 +252,8 @@ h1 {
 }
 
 .content-block img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 375px;
     object-fit: cover;
 }
 
@@ -257,15 +262,17 @@ h1 {
 }
 
 .content-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
     color: #4b5563;
     font-weight: lighter;
 }
 
 .content-text p {
     color: #6b7280;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 /* Animations */
@@ -281,11 +288,13 @@ h1 {
 /* Mobile Navigation Styles */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     h1 {
+        font-size: 2.5rem;
         text-align: center;
+        margin-bottom: 3rem;
     }
 
     .hamburger {
@@ -336,12 +345,19 @@ h1 {
     }
 
     .slide img {
-        height: 300px;
+        height: 400px;
     }
 
     .text-overlay {
         padding: 15px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .about-section,
+    .content-section,
+    .contact-section {
+        padding: 0 1.5rem;
+        margin: 4rem auto;
     }
 
     .contact-section {
@@ -379,8 +395,18 @@ h1 {
 
     .content-block img {
         width: 100%;
-        max-width: 400px;
-        height: 250px;
-        object-fit: cover;
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .content-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-text p,
+    .about-text p,
+    .contact-section p,
+    .contact-section a {
+        font-size: 1.1rem;
     }
 }
