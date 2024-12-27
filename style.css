@@ -160,7 +160,7 @@ h1 {
 .about-section.visible h1 {
     opacity: 1;
     transform: translateY(0);
-    transition: all 0.8s ease;
+    transition: all 0.6s ease;
 }
 
 .about-content {
@@ -179,7 +179,7 @@ h1 {
 .about-section.visible .about-logo {
     opacity: 1;
     transform: translateX(0);
-    transition: all 0.8s ease 0.3s;
+    transition: all 0.6s ease 0.3s;
 }
 
 .about-logo img {
@@ -200,7 +200,7 @@ h1 {
 .about-section.visible .about-text {
     opacity: 1;
     transform: translateX(0);
-    transition: all 0.8s ease 0.6s;
+    transition: all 0.6s ease 0.5s;
 }
 
 .about-text p {
